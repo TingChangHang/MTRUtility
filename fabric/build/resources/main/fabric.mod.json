@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "highrails",
+	"version": "1.19.2-1.0.0",
+	"name": "MTR Utilitys Addon",
+	"description": "",
+	"authors": [
+		"Roimu_616,tkk_8619"
+	],
+	"contact": {
+		"homepage":"",
+		"sources":""
+	},
+	"license": "MIT",
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "mtr.fabric.MainFabric"
+		],
+		"client": [
+          "mtr.fabric.MainFabricClient"
+		],
+		"modmenu": [
+          "mtr.fabric.ModMenuApiImpl"
+		]
+	},
+	"mixins": [
+		"highrails.mixins.json"
+	],
+	"depends": {
+		"fabric": "*",
+		"minecraft": "*",
+		"mtr": "*"
+	}
+}
